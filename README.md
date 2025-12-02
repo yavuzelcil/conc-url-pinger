@@ -1,26 +1,26 @@
 # conc-url-pinger
 
-Birden fazla URL'yi eşzamanlı olarak ping atan basit bir Rust uygulaması.
+A simple Rust application that pings multiple URLs concurrently.
 
-## Özellikler
+## Features
 
-- Tokio ile asenkron HTTP istekleri
-- Eşzamanlı istek sınırlaması (semaphore)
-- Basit hata yönetimi
+- Asynchronous HTTP requests with Tokio
+- Concurrency limiting using semaphore
+- Basic error handling
 
-## Kullanım
+## Usage
 
 ```bash
 cargo run
 ```
 
-URL'leri ve eşzamanlılık limitini `main.rs` dosyasından düzenleyebilirsiniz.
+You can edit the URLs and concurrency limit in the `main.rs` file.
 
-## Bağımlılıklar
+## Dependencies
 
 - `tokio` - Async runtime
 - `reqwest` - HTTP client
 
-## Lisans
+## License
 
 MIT
